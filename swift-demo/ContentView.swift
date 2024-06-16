@@ -13,16 +13,29 @@ struct ContentView: View {
             Color(.black)
                 .ignoresSafeArea()
             
-            VStack {
-                Image("earth")
+            VStack(alignment: .leading, spacing: 20){
+                Image("space")
                     .resizable()
-                    .cornerRadius(15)
                     .aspectRatio(contentMode: .fit)
-                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                Text("Deep Space")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
+                    .cornerRadius(15)
+                    .padding(.all)
+                
+                HStack {
+                    Text("Deep Space")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                    
+                    Image(systemName: "star.fill").foregroundColor(.white)
+                    Image(systemName: "star.fill").foregroundColor(.white)
+                    Image(systemName: "star.fill").foregroundColor(.white)
+                    Image(systemName: "star.fill").foregroundColor(.white)
+                    Image(systemName: "star.fill").foregroundColor(.white)
+                }
+                
+                Text("Into the void of the universe where everything can be questioned !")
                     .foregroundColor(.white)
+                    .font(.title3)
             }
         }
     }
