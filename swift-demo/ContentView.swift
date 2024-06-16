@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color(.black)
+            Color(.systemIndigo)
                 .ignoresSafeArea()
             
             VStack(alignment: .leading, spacing: 20){
@@ -24,7 +24,7 @@ struct ContentView: View {
                     Text("Deep Space")
                         .font(.largeTitle)
                         .fontWeight(.semibold)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                     
                     Spacer()
                     
@@ -43,9 +43,22 @@ struct ContentView: View {
                 .font(.caption)
                 
                 Text("Into the void of the universe where everything can be questioned !")
-                    .foregroundColor(.white)
-                    .font(.title3)
+                    .foregroundColor(.black)
+                    .font(.system(size: 20, weight: .regular, design: .serif).italic())
+                
+                HStack {
+                    Spacer()
+                    Image(systemName: "externaldrive.badge.wifi")
+                    Image(systemName: "airplane")
+                }
+                .foregroundColor(.gray)
+                .font(.caption)
             }
+            .padding()
+            .background(Rectangle().foregroundColor(.white))
+            .cornerRadius(15)
+            .shadow(radius: 15)
+            .padding()
         }
     }
 }
