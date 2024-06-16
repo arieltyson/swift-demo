@@ -26,12 +26,21 @@ struct ContentView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                     
-                    Image(systemName: "star.fill").foregroundColor(.white)
-                    Image(systemName: "star.fill").foregroundColor(.white)
-                    Image(systemName: "star.fill").foregroundColor(.white)
-                    Image(systemName: "star.fill").foregroundColor(.white)
-                    Image(systemName: "star.fill").foregroundColor(.white)
+                    Spacer()
+                    
+                    VStack {
+                        HStack {
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                        }
+                        Text("(Reviews 3,611)")
+                    }
                 }
+                .foregroundColor(.orange)
+                .font(.caption)
                 
                 Text("Into the void of the universe where everything can be questioned !")
                     .foregroundColor(.white)
