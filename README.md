@@ -5,7 +5,8 @@
 This project is the stepping stone to my deep dive into iOS Development using Native tools such as Swift and Swift UI.
 I love all things Apple and the development of Apple applications resonates deeply within me !!
 
-<img src="swift-demo/Assets.xcassets/moon.imageset/moon.jpg" alt="Moon Image" width="300"/>
+<img src="https://github.com/arieltyson/swift-demo/assets/114557791/2e193665-81b4-449a-acb4-b531ecfa4e65" alt="Interstellar" width="400" height="400" />
+
 
 ## Technologies Used  💻
 
